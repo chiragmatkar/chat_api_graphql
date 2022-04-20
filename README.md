@@ -10,11 +10,11 @@ pip install -r requirements.txt
 
 ```
 
-Load server 
+Load server
 ```
 uvicorn app:app --reload
 ```
-## We will build a GraphQL API that allows users to message each other. 
+## We will build a GraphQL API that allows users to message each other.
 
 The goal is to implement the following:
 
@@ -82,4 +82,6 @@ mutation {
 }
 ```
 
-Sudscription will listen and flush the data
+Subscription will listen and flush the data
+
+## Deploy on Heroku
