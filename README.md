@@ -12,7 +12,7 @@ The goal is to implement the following:
 - A subscription that sends new messages to subscribed clients when they are created.
 
 
-# Test Subscription
+## Test Subscription
 Let’s begin by creating two users, user_one and user_two. Paste the following mutation and hit play.
 
 ```
