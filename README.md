@@ -28,12 +28,19 @@ mutation {
 ```
 ```
 mutation {
-  createUser(username:"user_one") {
+  createUser(username:"user_two") {
     success
     user {
       userId
       username
     }
   }
+}
+```
+Now we have 2 users created , If you looked at the responses from the createUser mutations you already know what IDs were assigned to them, but let’s assume we only know the usernames, so we will use the userId query to retrieve the IDs.
+
+```
+query {
+  userId(username:"user_one")
 }
 ```
