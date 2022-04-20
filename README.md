@@ -1,5 +1,15 @@
 # chat_api_graphql
 
+## Test Locally
+
+
+```
+python3 -m venv chat_api_env
+source chat_api_env/bin/activate
+pip install ariadne "uvicorn[standard]"
+
+
+```
 
 ## We will build a GraphQL API that allows users to message each other. 
 
