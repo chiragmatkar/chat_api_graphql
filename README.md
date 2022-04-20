@@ -14,3 +14,26 @@ A subscription that sends new messages to subscribed clients when they are creat
 
 # Test Subscription
 Let’s begin by creating two users, user_one and user_two. Paste the following mutation and hit play.
+
+```
+mutation {
+  createUser(username:"user_one") {
+    success
+    user {
+      userId
+      username
+    }
+  }
+}
+```
+```
+mutation {
+  createUser(username:"user_one") {
+    success
+    user {
+      userId
+      username
+    }
+  }
+}
+```
