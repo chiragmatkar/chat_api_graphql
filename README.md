@@ -37,10 +37,36 @@ mutation {
   }
 }
 ```
-Now we have 2 users created , If you looked at the responses from the createUser mutations you already know what IDs were assigned to them, but let’s assume we only know the usernames, so we will use the userId query to retrieve the IDs.
+
+In the first window, paste the following subscription in the GraphQL editor and hit play:
 
 ```
-query {
-  userId(username:"user_one")
+subscription {
+  messages(userId: "2") {
+    content
+    senderId
+    recipientId
+  }
 }
 ```
+In the second window, paste the following subscription in the GraphQL editor and hit play:
+
+
+```
+mutation {
+  createMessage(
+    senderId: "1",
+    recipientId: "2",
+    content:"Hello there"
+  ) {
+    success
+    message {
+      content
+      recipientId
+      senderId
+    }
+  }
+}
+```
+
+Sudscription will listen and flush the data
