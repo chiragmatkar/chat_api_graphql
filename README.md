@@ -1,5 +1,7 @@
 # chat_api_graphql
 
+This is a Python Flask API with Graphql for message communication
+
 ## Test Locally
 
 
