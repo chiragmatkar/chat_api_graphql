@@ -91,4 +91,6 @@ Subscription will listen and flush the data
 
 ## Deploy on Heroku
 
-Hi Lets deploy
+Hi Lets deploy and play 
+
+https://chat-graphql-flask.herokuapp.com/
