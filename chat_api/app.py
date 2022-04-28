@@ -2,9 +2,9 @@ import uvicorn
 from ariadne import make_executable_schema, load_schema_from_path, \
     snake_case_fallback_resolvers
 from ariadne.asgi import GraphQL
-from mutations import mutation
-from queries import query
-from subscriptions import subscription
+from . import mutation
+from . import query
+from . import subscription
 
 type_defs = load_schema_from_path("schema.graphql")
 
@@ -16,4 +16,4 @@ app = GraphQL(schema, debug=True)
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=5000, log_level="info")
+    uvicorn.run(app)
