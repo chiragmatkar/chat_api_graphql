@@ -2,6 +2,13 @@
 
 This is a Python ASGI Implementation with Graphql for message communication
 
+## Deploy on Heroku
+
+Hi Lets deploy and play 
+
+https://chat-graphql-flask.herokuapp.com/
+
+
 ## Test Locally
 
 
@@ -89,8 +96,4 @@ Subscription will listen and flush the data
 ![Screenshot 2022-04-20 at 9 51 42 PM](https://user-images.githubusercontent.com/335651/164303030-0e96259c-6c64-4064-aaed-2c662a4c3a38.png)
 
 
-## Deploy on Heroku
 
-Hi Lets deploy and play 
-
-https://chat-graphql-flask.herokuapp.com/
