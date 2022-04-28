@@ -1,1 +1,1 @@
-web: gunicorn --chdir chat_api app:app
+web: uvicorn -c chat_api app:app --host=0.0.0.0 --port=${PORT:-5000}
